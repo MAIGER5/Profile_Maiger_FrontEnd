@@ -1,0 +1,63 @@
+@import url('../../variables.module.css');
+
+/* Navbar transparente */
+.navbar {
+  width: 70%;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid red;
+  
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  border: 1px solid blue;
+}
+
+.navbar ul li {
+  position: relative;
+  overflow: hidden; /* Para que el efecto no desborde el ítem */
+
+  background-color: rgb(197, 193, 189);
+
+  border: 1px solid yellow;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  z-index: 1; /* Asegura que el texto esté por encima del fondo */
+  transition: color 0.3s ease;
+}
+
+Efecto de desplazamiento
+.navbar ul li::before {
+  content: "";
+  position: absolute;
+  top: 100%; /* Empieza justo debajo del ítem */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo que se desplaza */
+  transition: transform 0.4s ease; /* Transición suave */
+  transform: translateY(-100%); /* Oculta el fondo al inicio */
+  z-index: 0;
+}
+
+/* Efecto hover: desplaza el fondo hacia abajo */
+.navbar ul li:hover::before {
+  transform: translateY(0); /* El fondo se expande */
+}
+
+/* Cambiar el color del texto cuando el fondo aparece */
+.navbar ul li:hover a {
+  color: #00aaff;
+}
