@@ -1,7 +1,10 @@
-import { Home } from "../components/home/home";
 import { NavBar } from "../components/navBar/navBar";
+import { BaseView } from "../components/baseView/baseView";
+import { Home } from "../components/home/home";
 
 export{
-  Home,
   NavBar,
+  BaseView,
+  Home,
+
 }

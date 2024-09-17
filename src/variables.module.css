@@ -1,19 +1,24 @@
 :root {
-  --blue1-color: #10497c;
-  --blue3-color: #248DC1;
-  --teal-color: #0098A7;
-  --grey1-color: #1d252c;
-  --grey4-color: #a2a9ad;
-  --orange1-color: #f58220;
+  /* --white-color: rgb(152, 158, 163); */
+  /* --blue1-color: #10497c; */
+  /* --blue3-color: #248DC1; */
+  /* --teal-color: #0098A7; */
+  --grey1-color: #222831;
+  --grey2-color: #62798b;
+  --grey3-color: #dadfe2;
+  --green1-color: #61d2b4;
+  /* --grey4-color: #a2a9ad; */
+  /* --orange1-color: #f58220; */
   --orange2-color: #ce5f28;
-  --grey2-color: #323e48;
-  --grey3-color: #7b868c;
-  --grey5-color: #cfd2d3;
-  --grey6-color: #f4f6f7;
-  --grey7-color: #fdfafa;
-  --grey8-color: #f6f7f8;
-  --blue2-color: #0063b4;
-  --blue4-color: #31B4E6;
-  --blue5-color: #89C6E8;
-  --blue6-color: #bce2f7;
+  --whiteBone-color: #dfd3c3;
+
+  /* --orange3-color: #b14712; */
+  /* --blue2-color: #0063b4; */
+  /* --blue4-color: #31B4E6; */
+  /* --blue5-color: #89C6E8; */
+  /* --blue6-color: #bce2f7; */
+  /* --yellow1-color: #ffc93c; */
+  /* --yellow2-color: #f7af1d; */
+  /* --green1-color: #55bbaa; */
+
 }

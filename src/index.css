@@ -4,12 +4,14 @@ html, body, #root {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  /* background-color: #242424; */
 
-  background: #242424;
+  font-family: "Oswald", sans-serif;
+  background-color: #222831;
+
+  /* background: #242424;
   background: linear-gradient(271deg,#242424 0%, #3e3a3a 90%);
   background: -webkit-linear-gradient(271deg,#242424 0%, #3e3a3a 90%);
-  background: -moz-linear-gradient(271deg,#242424 0%, #3e3a3a 90%);
+  background: -moz-linear-gradient(271deg,#242424 0%, #3e3a3a 90%); */
 
 /* background: #f8da5b;
 background: linear-gradient(271deg,#f8da5b 0%, #e4c957 90%);

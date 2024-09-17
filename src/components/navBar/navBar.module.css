@@ -2,39 +2,42 @@
 
 /* Navbar transparente */
 .navbar {
-  width: 70%;
+  width: 50%;
   background-color: transparent;
   position: absolute;
+  top: 30px;
   left: 50%;
-  transform: translate(-50%);
-  border: 1px solid red;
+  transform: translate(-50%, -50%);
+  border: 8px solid #242424;
+  border-radius: 15px;
+  background: var(--green1-color);
+  z-index: 2;
   
 }
 
 .navbar ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  gap: 80px;
   margin: 0;
-  padding: 0;
-  border: 1px solid blue;
+  padding: 2px 10px;
 }
 
 .navbar ul li {
   position: relative;
-  overflow: hidden; /* Para que el efecto no desborde el ítem */
-
-  background-color: rgb(197, 193, 189);
-
-  border: 1px solid yellow;
+  padding: 0px 20px;
+  overflow: hidden;
 }
 
 .navbar ul li a {
   text-decoration: none;
-  color: white;
+  font-weight: 700;
+  font-size: 25px;
   display: inline-block;
   position: relative;
-  z-index: 1; /* Asegura que el texto esté por encima del fondo */
+  color: white;
+  z-index: 1; 
+  /* border: 1px solid rgb(253, 253, 253); */
   transition: color 0.3s ease;
 }
 
