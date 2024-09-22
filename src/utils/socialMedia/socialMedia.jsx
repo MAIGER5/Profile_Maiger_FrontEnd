@@ -14,10 +14,10 @@ export const SocialMedia = () => {
         div.style.transition = 'background .5s, transform .5s'
         div.addEventListener('mouseover', ()=>{
           div.style.background = data[index].color;
-          div.style.transform = 'scale(1.2)'
+          div.style.transform = 'scale(1.4)'
           setTimeout(() => {
             div.style.transform = 'scale(1)'
-          }, 300);
+          }, 150);
         })
 
         div.addEventListener('mouseout', ()=>{

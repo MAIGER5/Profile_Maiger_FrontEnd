@@ -1,16 +1,19 @@
 :root {
   /* --white-color: rgb(152, 158, 163); */
-  /* --blue1-color: #10497c; */
+  --blue1-color: #234c63;
+  --blue2-color: #73b1c1;
   /* --blue3-color: #248DC1; */
   /* --teal-color: #0098A7; */
   --grey1-color: #222831;
   --grey2-color: #62798b;
   --grey3-color: #dadfe2;
-  --green1-color: #61d2b4;
+  --grey4-color: #dae6ee;
+  /* --green1-color: #7fa99b; */
   /* --grey4-color: #a2a9ad; */
   /* --orange1-color: #f58220; */
-  --orange2-color: #ce5f28;
+  --orange2-color: #e26f36;
   --whiteBone-color: #dfd3c3;
+  --yellow1-color: #f7f39a;
 
   /* --orange3-color: #b14712; */
   /* --blue2-color: #0063b4; */
