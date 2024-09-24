@@ -1,0 +1,18 @@
+@import url(../../variables.module.css);
+
+.container{
+  width: fit-content;
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px 40px;
+}
+
+.container> li{
+  list-style-type: none;
+  color: var(--blue1-color);
+  font-size: calc(10px + .2vw);
+  cursor: pointer;
+}

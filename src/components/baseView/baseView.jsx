@@ -1,17 +1,8 @@
 import React, { useEffect } from 'react';
 import styles from './baseView.module.css';
-import {Cloudinary} from '@cloudinary/url-gen';
-import {AdvancedImage} from '@cloudinary/react'
 
 export const BaseView = () => {
 
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: 'dbn2bb4e2'
-    }
-  }); 
-
-  const myImage = cld.image('primerFondo')
 
   const colores = [
     'rgba(34, 40, 49, 0.5)',   // #222831 con opacidad 0.5
@@ -55,8 +46,6 @@ export const BaseView = () => {
 
 
       <section>
-
-        {/* <AdvancedImage cldImg={myImage}/> */}
 
         <table>
           <tbody>
