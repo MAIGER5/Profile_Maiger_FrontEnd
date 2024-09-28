@@ -82,6 +82,7 @@
 .squareBotons{
   display: flex;
   gap:30px;
+
 }
 
 .squareBotons> :first-child{
@@ -95,6 +96,8 @@
   border-radius: 13px;
   font-size: calc(10px + .5vw );
   font-weight: 600;
+  cursor: pointer;
+
 }
 
 .textBotones{
@@ -175,6 +178,7 @@
   display: grid;
   margin-top: 3vh;
   position: relative;
+  z-index: 999;
 }
 
 .boxContact{
@@ -191,7 +195,7 @@
 }
 
 .boxContact::before{
-  content: '';
+  content: '2024';
   width: 90%;
   height: 100%;
   position: absolute;
@@ -199,11 +203,19 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  background-color: var(--blue2-color);
+  background-color: var(--grey3-color);
   border-radius: 13px;
   border-width: 0px 3px 3px 3px;
   border-style: solid;
   border-color: var(--grey3-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: var(--blue1-color);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 2px;
 }
 
 .boxSideRight{
@@ -228,22 +240,27 @@
 
 .lineText{
   width: 100%;
-  padding: 0px 10px 0px 0px;
+  padding: 0px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
-  border-style: solid;
-  border-color: var(--blue2-color);
-  border-width: 1px 0px 0px 0px;
-  border-radius: 13px 0px;
+  align-items: center;
+  /* border-style: solid; */
+  /* border-color: var(--blue2-color); */
+  /* border-width: 1px 0px 0px 0px; */
+  border-radius: 14px 0px 0px 7px;
+  background-color: var(--grey3-color);
+  cursor: pointer;
+
 }
 
 .lineText> :first-child{
   width: 25%;
   font-size: calc(10px + 1vw);
   color: var(--grey3-color);
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
   position: relative;
   padding: 4px;
+  z-index: 1;
 }
 
 .lineText> :first-child::before{
@@ -254,25 +271,25 @@
   width: calc(30px  + .7vw);
   height: 100%;
   background-color: var(--blue1-color);
-  border-radius: 13px 0px 5px 5px;
+  border-radius: 13px 0px 0px 5px;
   z-index: -1;
 }
 
 .lineText> :nth-child(2){
   width: 50%;
-  font-size: calc(10px + .3vw);
+  font-size: calc(8px + .3vw);
   color: var(--blue1-color);
-  font-family: monospace;
 
 }
 
 
 .lineText> :nth-child(3){
   width: 25%;
+  height: 100%;
   text-align: right;
   font-size: calc(10px + .2vw);
-  color: var(--blue1-color);
-  font-family: monospace;
+  display: grid;
+  place-items: center;
 }
 
 .boxLineBar{
@@ -281,6 +298,79 @@
   border-radius: 20px 0px 0px 20px;
   background-color: var(--orange2-color);
   border-style: solid;
-  border-color: var(--blue2-color);
-  border-width: 2px 0px 2px 2px;
+  border-color: var(--grey3-color);
+  border-width: 3px 0px 2px 2px;
+
+}
+
+.pageFeet{
+  width: fit-content;
+  position: absolute;
+  top: 95%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+.pageFeet> :first-child{
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 10px;
+
+  color: var(--grey1-color);
+  background-color: var(--blue2-color);
+
+  position: relative;
+
+}
+
+.pageFeet> :first-child::before{
+  position: absolute;
+  content: '';
+  width: 120%;
+  height: 120%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid var(--blue1-color);
+  cursor: pointer;
+}
+
+.pageFeet> :nth-child(2){
+  color: var(--grey2-color);
+  font-weight: 100;
+  padding-right: 30px;
+
+
+}
+
+.likeBoton{
+  gap: 10px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--blue1-color);
+  padding: 10px 30px;
+  background-color: var(--grey3-color);
+  border-radius: 30px;
+}
+
+.likeBoton>:first-child{
+  cursor: pointer;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.likeBoton> span{
+  color: var(--blue1-color);
+}
+.likeBoton> span{
+  color: var(--blue1-color);
 }

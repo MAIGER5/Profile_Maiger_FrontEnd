@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './home.module.css';
 import { FaProjectDiagram } from "react-icons/fa";
+import { FaPlay } from "react-icons/fa";
+import { AiFillLike } from "react-icons/ai";
+import { FaComment } from "react-icons/fa6";
 import { AdvancedImage } from '@cloudinary/react';
 import { cloudinary_Home } from '../../cloudinaryImport/cloudinaryImport';
 import { BaseView, Lenguage, SocialMedia } from '../../import_And_export/import_And_export';
@@ -50,17 +53,17 @@ export const Home = () => {
           <div className={styles.boxLineText}>
             <div className={styles.lineText}>
               <span>01</span>
-              <span>hola cmo estas</span>
+              <span>CERTIFICACIONES</span>
               <span>/2024</span>
             </div>
             <div className={styles.lineText}>
               <span>02</span>
-              <span>Servicios de Programación</span>
+              <span>LICENCIAS</span>
               <span>/2024</span>
             </div>
             <div className={styles.lineText}>
               <span>03</span>
-              <span>Servicios de Telecomunicaciones</span>
+              <span>INFORMACIÓN DE CONTACTO</span>
               <span>/2024</span>
             </div>
           </div>
@@ -76,6 +79,22 @@ export const Home = () => {
       <div className={styles.piturePerfil}>
         <AdvancedImage cldImg={dataCloudinary.myPicture} />
       </div>
+
+      <div className={styles.pageFeet}>
+        <div>
+          <FaPlay />
+        </div>
+        <span>Video de Presentación</span>
+        <div className={styles.likeBoton}>
+          <AiFillLike />
+          <span>10</span>
+        </div>
+        <div className={styles.likeBoton}>
+          <FaComment />
+          <span>5</span>
+        </div>
+      </div>
+
     </div>
   )
 }
