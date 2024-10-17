@@ -9,10 +9,12 @@ export const Home = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.firstView}>
+      {/* Vista cuando el VW es mayor a 950px */}
+      <div className={styles.firstView}>  
         <HomeContent1/>
       </div>
-      <div className={styles.secondView}>
+      {/* Vista cuando el VW es mmenor a 950px */}
+      <div className={styles.secondView}> 
         <HomeContent2/>
       </div>
     </div>
