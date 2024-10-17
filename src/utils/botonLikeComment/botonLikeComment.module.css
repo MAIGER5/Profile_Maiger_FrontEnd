@@ -1,0 +1,32 @@
+@import url('../../variables.module.css');
+
+.container{
+  width: 50%;
+  height: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.likeBoton{
+  gap: 10px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--blue1-color);
+  padding: 10px 30px;
+  background-color: var(--grey3-color);
+  border-radius: 30px;
+}
+
+.likeBoton>:first-child{
+  cursor: pointer;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.likeBoton> span{
+  color: var(--blue1-color);
+}
+.likeBoton> span{
+  color: var(--blue1-color);
+}
