@@ -1,0 +1,10 @@
+@import url('../../variables.module.css');
+
+
+.container{
+  padding: 20px;
+  display: grid;
+  border-radius: 20px;
+  background-color: var(--blue2-color);
+
+}

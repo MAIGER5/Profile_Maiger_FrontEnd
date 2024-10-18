@@ -17,11 +17,20 @@
 
 .menuLeft{
   width: 17%;
+  padding: 40px 5px;
+
 }
 
 .contentRight{
   width: 83%;
   background-color: var(--grey3-color);
   border-radius: 10px;
+  padding: 40px 50px;
 
+}
+
+.container>button{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
 }
