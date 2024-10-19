@@ -8,12 +8,10 @@ import { IoLanguageSharp } from "react-icons/io5";
 import { GrUserExpert } from "react-icons/gr";
 import { ImGithub } from "react-icons/im";
 import { ImProfile } from "react-icons/im";
-import { MdOutlineContacts } from "react-icons/md";
 import { VscRadioTower } from "react-icons/vsc";
 import { MdOutlineSensorOccupied } from "react-icons/md";
 import { FaPersonMilitaryRifle } from "react-icons/fa6";
-
-
+import { IoMdChatboxes } from "react-icons/io";
 
 
 
@@ -68,8 +66,8 @@ export const MenuLeft = () => {
 
         </ul>
         <li>
-          <MdOutlineContacts/>
-          <span>Inf. de Contacto</span>
+          <IoMdChatboxes/>
+          <span>Chat & Contacto</span>
         </li>
 
       </ul>

@@ -1,15 +1,90 @@
 @import url('../../variables.module.css');
 
+
+
 .container{
   display: flex;
-  gap: 20px;
-  border: 1px solid blue;
+  gap: 30px;
   margin-top: 30px;
+
 }
 
 .container>div{
   flex: 1;
-  background-color: var(--blue1-color);
   border-radius: 15px;
   display: flex;
+  flex-direction: column;
+}
+
+.card{
+  height: 100%;
+}
+
+.card>section{
+  background-color: var(--orange2-color);
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card>section>:first-child{
+  padding: 5px;
+  font-size: 35px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20%);
+  color: var(--grey4-color);
+}
+
+.card>section>span{
+  font-weight: 600;
+  color: var(--grey4-color);
+
+}
+
+.card>ul{
+  display: grid;
+  gap: 3px;
+  padding: 10px;
+  border-radius: 3px;
+  /* background-color: #dfe0e6; */
+  
+  box-shadow: -3px 4px 5px 0px rgba(164,172,180,0.29);
+  -webkit-box-shadow: -3px 4px 5px 0px rgba(164,172,180,0.29);
+  -moz-box-shadow: -3px 4px 5px 0px rgba(164,172,180,0.29);}
+
+.card>ul> li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.card>ul>li>span{
+  flex: 1;
+  font-size: 12px;
+  color: var(--blue1-color);
+}
+
+.card>ul>li>:first-child{
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #00d8ff;
+
+}
+
+.card>ul>li>span{
+  text-align: left;
+}
+
+.container>:nth-child(2)>section{
+  background-color: var(--grey2-color);
+}
+.container>:nth-child(3)>section{
+  background-color: var(--blue2-color);
+}
+.container>:nth-child(4)>section{
+  background-color: var(--blue1-color);
 }

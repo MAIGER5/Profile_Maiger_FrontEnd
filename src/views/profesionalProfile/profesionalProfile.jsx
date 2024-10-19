@@ -17,7 +17,6 @@ export const ProfesionalProfile = () => {
         <MenuLeft/>
       </div>
       <div className={styles.contentRight}>
-        <span>Mi Perfil como Full Stack</span>
         <CardName/>
         <CardColors/>
       </div>
