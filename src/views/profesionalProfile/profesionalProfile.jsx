@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from './profesionalProfile.module.css'
 import { useNavigate } from 'react-router-dom';
-import { CardColors, CardName, MenuLeft } from '../../import_And_export/import_And_export';
-import { Widgets } from '../../components/widgets/widgets';
+import { CardColors, CardName, LikePost, MenuLeft } from '../../import_And_export/import_And_export';
 
 export const ProfesionalProfile = () => {
 
@@ -20,7 +19,9 @@ export const ProfesionalProfile = () => {
       <div className={styles.contentRight}>
         <CardName/>
         <CardColors/>
-        <Widgets/>
+        <div>
+          <LikePost/>
+        </div>
       </div>
       <button
         onClick={()=> handleNavigate('/') }

@@ -25,8 +25,13 @@
   width: 83%;
   background-color: var(--grey3-color);
   border-radius: 10px;
-  padding: 40px 50px;
+  padding: 40px 50px 10px 50px;
+  display: grid;
 
+}
+.contentRight>:nth-child(3){
+  width: fit-content;
+  margin-top: auto;
 }
 
 .container>button{
