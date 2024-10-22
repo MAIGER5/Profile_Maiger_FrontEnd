@@ -1,3 +1,5 @@
+
+
 html, body, #root {
   margin: 0;
   padding: 8px;
@@ -9,8 +11,13 @@ html, body, #root {
   background-color: #222831;
 }
 
+#root> :first-child{
+  height: 100%;
+}
+
 * {
   box-sizing: inherit;
+
 }
 
 
