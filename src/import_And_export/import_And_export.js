@@ -12,7 +12,7 @@ import { LikePost } from "../components/likePost/likePost";
 import { CardName } from "../components/cardName/cardName";
 import { CardColors } from "../components/cardColors/cardColors";
 import { ProfesionalProfile } from "../views/profesionalProfile/profesionalProfile";
-
+import { BotonBack } from "../components/botonBack/botonBack";
 
 
 export{
@@ -30,4 +30,5 @@ export{
   CardName,
   CardColors,
   ProfesionalProfile,
+  BotonBack,
 }

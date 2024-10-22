@@ -1,6 +1,5 @@
 @import url('../../variables.module.css');
 
-/* From Uiverse.io by Li-Deheng */ 
 .like-dislike-container {
   --dark-grey: #353535;
   --middle-grey: #767676;
@@ -125,16 +124,22 @@
   border-right: 0.1rem solid var(--dark-grey);
   padding: 0 0.6rem 0 0.5rem;
   pointer-events: none;
+  font-size: 15px;
+  color: #db4f09;
+  font-weight: 600;
 }
 
 .like-dislike-container .dislike-text-content {
   border-left: 0.1rem solid var(--dark-grey);
   padding: 0 0.5rem 0 0.6rem;
   pointer-events: none;
+  font-size: 15px;
+  color: #072a9c;
+  font-weight: 600;
 }
 
 .like-dislike-container .icons .svgs {
-  width: 1.3rem;
+  width: 1.1rem;
   fill: #000000;
   box-sizing: content-box;
   padding: 10px 10px;

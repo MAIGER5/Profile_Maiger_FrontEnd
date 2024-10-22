@@ -31,13 +31,14 @@
 
 .card>section>:first-child{
   padding: 5px;
-  font-size: 35px;
+  font-size: clamp(1.5rem, 1.8vw, 3rem);
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20%);
   color: var(--grey4-color);
 }
 
 .card>section>span{
+  font-size: clamp(.5rem, 1vw, 1rem);
   font-weight: 600;
   color: var(--grey4-color);
 
@@ -63,7 +64,7 @@
 
 .card>ul>li>span{
   flex: 1;
-  font-size: 12px;
+  font-size: clamp(.65rem, .8vw, .8rem);
   color: var(--blue1-color);
 }
 

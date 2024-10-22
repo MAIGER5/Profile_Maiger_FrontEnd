@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './profesionalProfile.module.css'
 import { useNavigate } from 'react-router-dom';
-import { CardColors, CardName, LikePost, MenuLeft } from '../../import_And_export/import_And_export';
+import { BotonBack, CardColors, CardName, LikePost, MenuLeft } from '../../import_And_export/import_And_export';
 
 export const ProfesionalProfile = () => {
 
@@ -23,9 +23,9 @@ export const ProfesionalProfile = () => {
           <LikePost/>
         </div>
       </div>
-      <button
-        onClick={()=> handleNavigate('/') }
-      >Back</button>
+      <div onClick={()=> handleNavigate('/')} className={styles.botonBack}>
+        <BotonBack/>
+      </div>
 
     </div>
   )

@@ -23,7 +23,7 @@
 }
 
 .time {
-  font-size: 25px;
+  font-size: clamp(1rem, 1.9vw, 4rem);
   margin-top: 0px;
   margin-left: 35px;
   font-weight: 500;
@@ -36,7 +36,7 @@
 }
 
 .day {
-  font-size: 18px;
+  font-size: clamp(.7rem, 1vw, 1.5rem);
   margin-top: 0px;
   margin-left: 35px;
   font-weight: 400;

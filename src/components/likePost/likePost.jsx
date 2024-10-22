@@ -8,7 +8,7 @@ export const LikePost = () => {
       {/* <div class="tool-box">
         <button class="btn-close">×</button>
       </div> */}
-      <p class="text-content">Que piensas<br/>de este perfil?</p>				
+      <p class="text-content">Te gusta<br/>dale Like</p>				
       <div class="icons-box">
         <div class="icons">
           <label class="btn-label" for="like-checkbox">
