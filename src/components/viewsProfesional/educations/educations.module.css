@@ -1,0 +1,26 @@
+@import url('../../../variables.module.css');
+
+.container{
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.container > :nth-child(2) {
+  display: flex;
+  gap: 30px;
+}
+
+.tecnogyCourses > :first-child {
+  width: 60%;
+}
+
+.tecnogyCourses > :nth-child(2) {
+  width: 40%;
+}
+
+
+
+.container > :nth-child(2) > :first-child {
+  
+}

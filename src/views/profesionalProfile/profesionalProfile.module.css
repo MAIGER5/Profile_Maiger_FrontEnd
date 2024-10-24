@@ -27,15 +27,15 @@
   border-radius: 10px;
   padding: 40px 50px 10px 50px;
   display: grid;
+  position: relative;
+
 
 }
-.contentRight>:nth-child(3){
-  width: fit-content;
-  margin-top: auto;
-}
 
-.botonBack{
+
+.botonBack  {
   position: absolute;
   bottom: 5%;
   right: 5%;
+  
 }

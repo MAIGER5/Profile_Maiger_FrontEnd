@@ -1,0 +1,10 @@
+@import url('../../../variables.module.css');
+
+.container{
+  display: grid;
+  justify-content: space-between;
+}
+
+.container>:nth-child(3){
+  margin-right: auto;
+}

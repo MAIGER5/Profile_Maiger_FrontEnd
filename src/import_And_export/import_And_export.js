@@ -13,6 +13,10 @@ import { CardName } from "../components/cardName/cardName";
 import { CardColors } from "../components/cardColors/cardColors";
 import { ProfesionalProfile } from "../views/profesionalProfile/profesionalProfile";
 import { BotonBack } from "../components/botonBack/botonBack";
+import { FullStack } from "../components/viewsProfesional/fullStack/fullStack";
+import { Educations } from "../components/viewsProfesional/educations/educations";
+import { BotonUsefull } from "../components/botonUsefull/botonUsefull";
+
 
 
 export{
@@ -31,4 +35,7 @@ export{
   CardColors,
   ProfesionalProfile,
   BotonBack,
+  FullStack,
+  Educations,
+  BotonUsefull,
 }

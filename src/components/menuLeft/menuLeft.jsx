@@ -15,57 +15,59 @@ import { IoMdChatboxes } from "react-icons/io";
 
 
 
-export const MenuLeft = () => {
+export const MenuLeft = ({onMenuClick}) => {
+
+  
 
 
   return (
     <div className={styles.container}>
       <div>hola mundo</div>
       <ul>
-        <li>
+        <li onClick={ () => onMenuClick('fullStack')}>
           <MdDeveloperMode/>
           <span>FULL STACK</span>
         </li>
-        <li>
+        <li onClick={ () => onMenuClick('edcucation')}>
           <PiStudentFill/>
           <span>Educación</span>
         </li>
-        <li>
+        <li onClick={ () => onMenuClick('experience')}>
           <GrUserExpert/>
           <span>Experiencia</span>
         </li>
-        <li>
+        <li onClick={ () => onMenuClick('languaje')}>
           <IoLanguageSharp/>
           <span>Lenguaje</span>
         </li>
-        <li>
+        <li onClick={ () => onMenuClick('skills')}>
           <GiSkills/>
           <span>Habilidades</span>
         </li>
-        <li>
+        <li onClick={ () => onMenuClick('myProjects')}>
           <ImGithub/>
           <span>Mis Proyectos</span>
         </li>
-        <li>
+        <li onClick={ () => onMenuClick('otherProfiles')}>
           <ImProfile/>
           <span>Otros Perfiles</span>
         </li>
         <ul className={styles.submenu}>
-          <li>
+          <li onClick={ () => onMenuClick('telecommunications')}>
             <VscRadioTower/>
             <span>Telecomunicaciones</span>
           </li>
-          <li>
+          <li onClick={ () => onMenuClick('ocpuational')}>
             <MdOutlineSensorOccupied/>
             <span>SG_SST</span>
           </li>
-          <li>
+          <li li onClick={ () => onMenuClick('military')}>
             <FaPersonMilitaryRifle/>
             <span>Militar</span>
           </li>
 
         </ul>
-        <li>
+        <li onClick={ () => onMenuClick('contact')}>
           <IoMdChatboxes/>
           <span>Chat & Contacto</span>
         </li>

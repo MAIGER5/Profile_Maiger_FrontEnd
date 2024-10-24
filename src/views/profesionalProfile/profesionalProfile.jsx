@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './profesionalProfile.module.css'
 import { useNavigate } from 'react-router-dom';
-import { BotonBack, CardColors, CardName, LikePost, MenuLeft } from '../../import_And_export/import_And_export';
+import { BotonBack, CardName, Educations, FullStack, LikePost, MenuLeft } from '../../import_And_export/import_And_export';
 
 export const ProfesionalProfile = () => {
+
+  const [selectedContent, setSelectedContend] = useState('fullStack')
 
   const navigate = useNavigate();
 
@@ -11,17 +13,28 @@ export const ProfesionalProfile = () => {
     navigate(path)
   }
 
+  const handleMenuClick = (view)=>{
+    setSelectedContend(view)
+  }
+
+
   return (
     <div className={styles.container}>
       <div className={styles.menuLeft}>
-        <MenuLeft/>
+        <MenuLeft onMenuClick={handleMenuClick}/>
       </div>
       <div className={styles.contentRight}>
-        <CardName/>
-        <CardColors/>
-        <div>
-          <LikePost/>
-        </div>
+        {selectedContent === 'fullStack' && <FullStack/>}
+        {selectedContent === 'edcucation' && <Educations/>}
+        {selectedContent === 'experience' && <FullStack/>}
+        {selectedContent === 'languaje' && <FullStack/>}
+        {selectedContent === 'skills' && <FullStack/>}
+        {selectedContent === 'myProjects' && <FullStack/>}
+        {selectedContent === 'otherProfiles' && <FullStack/>}
+        {selectedContent === 'telecommunications' && <FullStack/>}
+        {selectedContent === 'ocpuational' && <FullStack/>}
+        {selectedContent === 'military' && <FullStack/>}
+        {selectedContent === 'contact' && <FullStack/>}
       </div>
       <div onClick={()=> handleNavigate('/')} className={styles.botonBack}>
         <BotonBack/>

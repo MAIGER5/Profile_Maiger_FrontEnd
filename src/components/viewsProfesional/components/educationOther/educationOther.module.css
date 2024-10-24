@@ -1,0 +1,58 @@
+@import url('../../../../variables.module.css');
+
+.container{
+  display: grid;
+  gap: 20px;
+}
+
+
+.cardLong{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+
+.container > :nth-child(odd) > :first-child {
+  background-color: var(--grey1-color);
+}
+
+.container > :nth-child(even) > :first-child {
+  background-color: var(--blue3-color);
+}
+
+
+.cardLong > :first-child{
+  padding: 14px;
+  font-size: 50px;
+  border-radius: 15px;
+  color: var(--grey4-color);
+}
+
+
+
+.cardLong > :nth-child(n+2){
+  display: grid;
+  gap: 4px;
+  color: var(--grey1-color);
+  /* border: 1px solid greenyellow; */
+}
+
+
+.cardLong > :nth-child(2) > :first-child{
+  font-weight: 700;
+  font-size: clamp(.7rem, .9vw, 1rem );
+
+}
+
+.cardLong > :nth-child(2) > :nth-child(2){
+  font-size: clamp(.4rem, .7vw, 1rem );
+}
+
+.cardLong > :nth-child(3){
+  margin-left: auto;
+  margin-right: 30px;
+  font-size: clamp(.4rem, .7vw, 1rem );
+
+
+}
