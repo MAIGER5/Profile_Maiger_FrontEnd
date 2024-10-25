@@ -11,7 +11,7 @@ export const dataCardProfesion = [
     imagen:image1,
     title1:'Full Stack',
     title2:'Developer',
-    description:'Junio/2023',
+    description:'Enero/2023',
   },
   {
     id:2,

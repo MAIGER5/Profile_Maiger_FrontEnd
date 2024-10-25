@@ -16,6 +16,7 @@ import { BotonBack } from "../components/botonBack/botonBack";
 import { FullStack } from "../components/viewsProfesional/fullStack/fullStack";
 import { Educations } from "../components/viewsProfesional/educations/educations";
 import { BotonUsefull } from "../components/botonUsefull/botonUsefull";
+import { Experience } from "../components/viewsProfesional/experience/experience";
 
 
 
@@ -38,4 +39,5 @@ export{
   FullStack,
   Educations,
   BotonUsefull,
+  Experience,
 }

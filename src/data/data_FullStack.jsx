@@ -60,7 +60,7 @@ export const Data_FullStack = [
       {
         Infid:5,
         Inficon:<ImCss3/>,    
-        Infspan:'CSS: [CSS module, Boostrap5, Material UI, Ionic ]',
+        Infspan:'CSS: [CSS module, NextUI, Boostrap5, Material UI, Ionic ]',
         colorStyle:'#1572B6'
       },
       {
