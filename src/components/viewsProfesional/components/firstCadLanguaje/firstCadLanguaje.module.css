@@ -1,0 +1,113 @@
+@import url('../../../../variables.module.css');
+
+
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--blue1-color);
+  padding: 3rem;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.containerBackground{
+  background-color: var(--grey1-color);
+}
+
+.container > :first-child{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  height: 120%;
+  z-index: 2;
+}
+  
+.container > :first-child > img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+
+}
+  
+.titles{
+  width: 60%;
+  padding-right: 20px;
+
+}
+  
+.titles > span{
+  margin-top: 0;
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+  
+.titles > p{
+  margin-top: 5px;
+  font-size: clamp(.7rem, 1vw, 3rem);
+  font-weight: lighter;
+  color: var(--blue2-color);
+
+}
+  
+.container > *{
+  color: var(--grey4-color);
+}
+  
+  
+.botonsCircle{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+  
+.boton{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+  
+.boton > :first-child{
+  padding: 10px;
+  font-size: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--grey4-color);
+}
+  
+.botonsCircle > :first-child > :first-child{
+  background-color: var(--orange2-color);
+}
+
+.botonsCircle > :nth-child(2) > :first-child{
+  background-color: var(--yellow1-color);
+}
+
+/** estoy son estilos que se aplican dependiendo de la vista de skills */
+.botonsCircleAltern > :first-child > :first-child{
+  background-color: var(--blue1-color);
+}
+
+.botonsCircleAltern > :nth-child(2) > :first-child{
+  background-color: var(--grey1-color);
+}
+/** aqui terminan */
+
+  
+.boton > :nth-child(2){
+  display: flex;
+  flex-direction: column;
+}
+  
+.boton > :nth-child(2) > span{
+  font-size: clamp(.7rem, .9vw, 2rem);
+}
+  
+.boton > :nth-child(2) > :nth-child(2){
+  font-size: clamp(.7rem, .8vw, 2rem);
+  color: var(--blue2-color);
+}
+

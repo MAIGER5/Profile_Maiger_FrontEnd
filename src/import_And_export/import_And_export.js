@@ -17,6 +17,8 @@ import { FullStack } from "../components/viewsProfesional/fullStack/fullStack";
 import { Educations } from "../components/viewsProfesional/educations/educations";
 import { BotonUsefull } from "../components/botonUsefull/botonUsefull";
 import { Experience } from "../components/viewsProfesional/experience/experience";
+import { Languaje } from "../components/viewsProfesional/languaje/languaje";
+import { Skills } from "../components/viewsProfesional/skills/skills";
 
 
 
@@ -40,4 +42,6 @@ export{
   Educations,
   BotonUsefull,
   Experience,
+  Languaje,
+  Skills,
 }

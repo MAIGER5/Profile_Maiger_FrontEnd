@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './profesionalProfile.module.css'
 import { useNavigate } from 'react-router-dom';
-import { BotonBack, CardName, Educations, Experience, FullStack, LikePost, MenuLeft } from '../../import_And_export/import_And_export';
+import { BotonBack, CardName, Educations, Experience, FullStack, Languaje, LikePost, MenuLeft, Skills } from '../../import_And_export/import_And_export';
 
 export const ProfesionalProfile = () => {
 
@@ -27,8 +27,8 @@ export const ProfesionalProfile = () => {
         {selectedContent === 'fullStack' && <FullStack/>}
         {selectedContent === 'edcucation' && <Educations/>}
         {selectedContent === 'experience' && <Experience/>}
-        {selectedContent === 'languaje' && <FullStack/>}
-        {selectedContent === 'skills' && <FullStack/>}
+        {selectedContent === 'skills' && <Skills/>}
+        {selectedContent === 'languaje' && <Languaje/>}
         {selectedContent === 'myProjects' && <FullStack/>}
         {selectedContent === 'otherProfiles' && <FullStack/>}
         {selectedContent === 'telecommunications' && <FullStack/>}

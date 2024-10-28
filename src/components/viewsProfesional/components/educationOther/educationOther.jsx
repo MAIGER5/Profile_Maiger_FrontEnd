@@ -13,10 +13,16 @@ export const EducationOther = () => {
   }
 
 
-
+  const handleChangeColor = ()=>{
+    return data[0].view === 'skills'
+    ? styles.containerAltern_0
+    : data[0].view === 'skills2'
+    ? styles.containerAltern_1
+    :''
+  }
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${handleChangeColor()}`}>
       {
         data.map((el)=>(
           <div key={el.id} className={styles.cardLong}>

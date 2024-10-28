@@ -36,13 +36,13 @@ export const MenuLeft = ({onMenuClick}) => {
           <GrUserExpert/>
           <span>Experiencia</span>
         </li>
-        <li onClick={ () => onMenuClick('languaje')}>
-          <IoLanguageSharp/>
-          <span>Lenguaje</span>
-        </li>
         <li onClick={ () => onMenuClick('skills')}>
           <GiSkills/>
           <span>Habilidades</span>
+        </li>
+        <li onClick={ () => onMenuClick('languaje')}>
+          <IoLanguageSharp/>
+          <span>Lenguaje</span>
         </li>
         <li onClick={ () => onMenuClick('myProjects')}>
           <ImGithub/>

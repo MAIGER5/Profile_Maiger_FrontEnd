@@ -5,6 +5,12 @@
   gap: 20px;
 }
 
+.containerAltern_0{
+ /*No quitar este estilo, depende de la view en la que se ecuentre*/
+}
+.containerAltern_1{
+ /*No quitar este estilo, depende de la view en la que se ecuentre*/
+}
 
 .cardLong{
   display: flex;
@@ -21,6 +27,17 @@
   background-color: var(--blue3-color);
 }
 
+/* Aqui empieza los stylos que dependen de la vista en la que se encuentre */
+.containerAltern_0 .cardLong > :first-child {
+  background-color: var(--yellow1-color);
+}
+
+.containerAltern_1 > .cardLong > :first-child {
+  background-color: var(--orange2-color);
+}
+
+
+/* termianan */
 
 .cardLong > :first-child{
   padding: 14px;
@@ -35,7 +52,6 @@
   display: grid;
   gap: 4px;
   color: var(--grey1-color);
-  /* border: 1px solid greenyellow; */
 }
 
 
