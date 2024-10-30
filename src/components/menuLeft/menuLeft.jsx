@@ -22,7 +22,7 @@ export const MenuLeft = ({onMenuClick}) => {
 
   return (
     <div className={styles.container}>
-      <div>hola mundo</div>
+      {/* <div>hola mundo</div> */}
       <ul>
         <li onClick={ () => onMenuClick('fullStack')}>
           <MdDeveloperMode/>

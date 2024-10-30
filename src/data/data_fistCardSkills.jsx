@@ -5,8 +5,8 @@ import { FaPersonArrowUpFromLine } from "react-icons/fa6";
 
 export const data_fistCardSkills =   {
   id:1,
-  title:'Este es el titulo de la vista de Languaje',
-  subtitle:'mis lenguajes los cuales estoy hablando',
+  title:'Mis Habilidades FULL-STACK',
+  subtitle:'Lo que me define como Desarrollador Full Stack',
   view:'skills',
   botonsCircle:[
     {

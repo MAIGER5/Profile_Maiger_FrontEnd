@@ -19,7 +19,7 @@ import { BotonUsefull } from "../components/botonUsefull/botonUsefull";
 import { Experience } from "../components/viewsProfesional/experience/experience";
 import { Languaje } from "../components/viewsProfesional/languaje/languaje";
 import { Skills } from "../components/viewsProfesional/skills/skills";
-
+import { Projects } from "../components/viewsProfesional/projects/projects";
 
 
 export{
@@ -44,4 +44,5 @@ export{
   Experience,
   Languaje,
   Skills,
+  Projects,
 }

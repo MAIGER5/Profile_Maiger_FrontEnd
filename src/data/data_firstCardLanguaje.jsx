@@ -7,8 +7,8 @@ import { TbMessageLanguage } from "react-icons/tb";
 export const data_firstCardLanguaje = 
   {
     id:1,
-    title:'Este es el titulo de la vista de Languaje',
-    subtitle:'mis lenguajes los cuales estoy hablando',
+    title:'IDIOMAS',
+    subtitle:'',
     view:'languaje',
     botonsCircle:[
       {

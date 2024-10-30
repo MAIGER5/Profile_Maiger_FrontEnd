@@ -13,8 +13,8 @@ export const EducationsCard1 = () => {
     <div className={styles.container}>
       <div>
         <div className={styles.sectionTitle}>
-          <span>Hola, estos son!</span>
-          <h1>Mis Principales Estudios</h1>
+          <span>Hola, este es!</span>
+          <h1>Mi Desarrollo Acadèmico</h1>
           <BotonUsefull title={'Portafolio'}/>
         </div>
         <section className={styles.allCards}>
