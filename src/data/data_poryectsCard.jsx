@@ -2,6 +2,7 @@ import React from 'react';
 import carmeuse1 from '../utils/CARMEUSE-BLUE-con-backgroun-grande.jpg';
 import dhs from '../utils/DHS.jpg';
 import cvEstrategico from '../utils/cvEstrategico.jpg';
+import tuoficial from '../utils/tuoficial.jpg';
 
 
 
@@ -36,7 +37,7 @@ export const data_poryectsCard = [
   },
   {
     id:4,
-    imagen1:'',
+    imagen1: tuoficial,
     imagen2:'https://media.licdn.com/dms/image/v2/D4E3DAQHgtRBqc_L9Cw/image-scale_191_1128/image-scale_191_1128/0/1715089995106/carmeuse_cover?e=2147483647&v=beta&t=8jVLotAS-5Ui8dM-u-RgAwdRL6TmdVlYUtdSgRTumi0',
     title:'Tu Oficial de Cumplimiento',
     subtitle:'React-JS - 2024',

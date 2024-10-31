@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './menuLeft.module.css';
 import { LuLayoutDashboard } from "react-icons/lu";
 import { MdDeveloperMode } from "react-icons/md";
@@ -17,57 +17,61 @@ import { IoMdChatboxes } from "react-icons/io";
 
 export const MenuLeft = ({onMenuClick}) => {
 
+  const [active, setActive] = useState('')
   
-
+  const handleClick = (item)=>{
+    setActive(item);
+    onMenuClick(item)
+  }
 
   return (
     <div className={styles.container}>
       {/* <div>hola mundo</div> */}
       <ul>
-        <li onClick={ () => onMenuClick('fullStack')}>
+        <li onClick={ () => handleClick('fullStack')} className={`${!active || active === 'fullStack'? styles.backgroundFullStack:''}`}>
           <MdDeveloperMode/>
           <span>FULL STACK</span>
         </li>
-        <li onClick={ () => onMenuClick('edcucation')}>
+        <li onClick={ () => handleClick('edcucation')} className={`${active === 'edcucation'? styles.backgroundFullStack1:''}`}>
           <PiStudentFill/>
           <span>Educación</span>
         </li>
-        <li onClick={ () => onMenuClick('experience')}>
+        <li onClick={ () => handleClick('experience')} className={`${active === 'experience'? styles.backgroundFullStack2:''}`}>
           <GrUserExpert/>
           <span>Experiencia</span>
         </li>
-        <li onClick={ () => onMenuClick('skills')}>
+        <li onClick={ () => handleClick('skills')} className={`${active === 'skills'? styles.backgroundFullStack3:''}`}>
           <GiSkills/>
           <span>Habilidades</span>
         </li>
-        <li onClick={ () => onMenuClick('languaje')}>
+        <li onClick={ () => handleClick('languaje')} className={`${active === 'languaje'? styles.backgroundFullStack4:''}`}>
           <IoLanguageSharp/>
           <span>Lenguaje</span>
         </li>
-        <li onClick={ () => onMenuClick('myProjects')}>
+        <li onClick={ () => handleClick('myProjects')} className={`${active === 'myProjects'? styles.backgroundFullStack5:''}`}>
           <ImGithub/>
           <span>Mis Proyectos</span>
         </li>
-        <li onClick={ () => onMenuClick('otherProfiles')}>
+        <li onClick={ () => handleClick('gitHub')} className={`${active === 'gitHub'? styles.backgroundFullStack6:''}`}>
           <ImProfile/>
-          <span>Otros Perfiles</span>
-        </li>
+          <span>GitHub</span>
+        </li> 
         <ul className={styles.submenu}>
-          <li onClick={ () => onMenuClick('telecommunications')}>
+          <li onClick={ () => handleClick('telecommunications')}>
             <VscRadioTower/>
             <span>Telecomunicaciones</span>
           </li>
-          <li onClick={ () => onMenuClick('ocpuational')}>
+          <li onClick={ () => handleClick('ocpuational')}>
             <MdOutlineSensorOccupied/>
             <span>SG_SST</span>
           </li>
-          <li li onClick={ () => onMenuClick('military')}>
+          <li li onClick={ () => handleClick('military')}>
             <FaPersonMilitaryRifle/>
             <span>Militar</span>
           </li>
 
         </ul>
-        <li onClick={ () => onMenuClick('contact')}>
+        <li onClick={ () => handleClick('contact')}>
           <IoMdChatboxes/>
           <span>Chat & Contacto</span>
         </li>

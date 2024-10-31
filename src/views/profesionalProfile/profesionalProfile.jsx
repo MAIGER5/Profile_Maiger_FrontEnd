@@ -30,7 +30,7 @@ export const ProfesionalProfile = () => {
         {selectedContent === 'skills' && <Skills/>}
         {selectedContent === 'languaje' && <Languaje/>}
         {selectedContent === 'myProjects' && <Projects/>}
-        {selectedContent === 'otherProfiles' && <FullStack/>}
+        {selectedContent === 'gitHub' && <FullStack/>}
         {selectedContent === 'telecommunications' && <FullStack/>}
         {selectedContent === 'ocpuational' && <FullStack/>}
         {selectedContent === 'military' && <FullStack/>}
